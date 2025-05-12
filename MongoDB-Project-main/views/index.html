@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overzicht Objecten</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Overzicht van Objecten</h1>
+    <input type="text" id="search" placeholder="Zoek op naam..." onkeyup="filterTable()">
+    <table>
+        <thead>
+            <tr>
+                <th>Afbeelding</th>
+                <th>Naam</th>
+                <th>Geboortedatum</th>
+                <th>Zeldzaamheid</th>
+                <th>Actief</th>
+                <th>Acties</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+            {{dataRows}}
+        </tbody>
+    </table>
+
+    <script>
+        function filterTable() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let rows = document.querySelectorAll("#dataTable tr");
+            rows.forEach(row => {
+                let name = row.cells[1].innerText.toLowerCase();
+                row.style.display = name.includes(input) ? "" : "none";
+            });
+        }
+    </script>
+</body>
+</html>

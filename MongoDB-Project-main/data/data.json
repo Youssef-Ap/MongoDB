@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "name": "Aether Knight",
+      "birthdate": "1567-03-05",
+      "abilities": ["Teleportation", "Energy Manipulation", "Dimensional Travel"],
+      "rarity": "Legendary",
+      "active": true,
+      "image": "https://via.placeholder.com/150",
+      "description": "A legendary knight who wields the power of the Aether."
+    },
+    {
+      "id": 2,
+      "name": "Arcane Weaver",
+      "birthdate": "1808-03-14",
+      "abilities": ["Spellcasting", "Enchantment", "Magical Constructs"],
+      "rarity": "Legendary",
+      "active": true,
+      "image": "https://via.placeholder.com/150",
+      "description": "A powerful sorcerer with mastery over mystical arts."
+    },
+    {
+      "id": 3,
+      "name": "Chrono Sage",
+      "birthdate": "1494-02-29",
+      "abilities": ["Time Manipulation", "Temporal Vision", "Age Reversal"],
+      "rarity": "Epic",
+      "active": false,
+      "image": "https://via.placeholder.com/150",
+      "description": "A wise sage who controls the flow of time."
+    },
+    {
+      "id": 4,
+      "name": "Earth Shaper",
+      "birthdate": "1611-09-03",
+      "abilities": ["Terrakinesis", "Nature Communication", "Seismic Sense"],
+      "rarity": "Legendary",
+      "active": false,
+      "image": "https://via.placeholder.com/150",
+      "description": "A guardian of the land, shaping the earth to his will."
+    },
+    {
+      "id": 5,
+      "name": "Flame Guardian",
+      "birthdate": "1634-07-21",
+      "abilities": ["Fire Manipulation", "Heat Resistance", "Molten Constructs"],
+      "rarity": "Legendary",
+      "active": true,
+      "image": "https://via.placeholder.com/150",
+      "description": "A fierce warrior who commands the flames."
+    }
+  ]
