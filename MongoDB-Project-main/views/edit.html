@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bewerk Object</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Bewerk {{name}}</h1>
+    <form action="/edit/{{id}}" method="POST">
+        <label>Naam: <input type="text" name="name" value="{{name}}"></label><br>
+        <label>Afbeelding URL: <input type="text" name="image" value="{{image}}"></label><br>
+        <label>Zeldzaamheid:
+            <select name="rarity">
+                <option value="Common" {{rarityCommon}}>Common</option>
+                <option value="Rare" {{rarityRare}}>Rare</option>
+                <option value="Epic" {{rarityEpic}}>Epic</option>
+            </select>
+        </label><br>
+        <label>Actief:
+            <select name="active">
+                <option value="true" {{activeYes}}>Ja</option>
+                <option value="false" {{activeNo}}>Nee</option>
+            </select>
+        </label><br>
+        <button type="submit">Opslaan</button>
+    </form>
+</body>
+</html>
